@@ -157,6 +157,14 @@
       "appTemplate": "quick-start-web",
       "packageType": "Zip",
       "useCaseName": "Serverless API"
+    },
+    {
+      "directory": "dotnet6/cookiecutter-aws-sam-eventbridge-schema-app-dotnet",
+      "displayName": "EventBridge App from scratch (100+ Event Schemas)",
+      "dependencyManager": "cli-package",
+      "appTemplate": "eventBridge-schema-app",
+      "packageType": "Zip",
+      "useCaseName": "Infrastructure event management"
     }
   ],
   "go1.x": [
