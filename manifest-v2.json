@@ -164,7 +164,7 @@
       "dependencyManager": "cli-package",
       "appTemplate": "eventBridge-schema-app",
       "packageType": "Zip",
-      "useCaseName": "Infrastructure event management2"
+      "useCaseName": "Infrastructure event management"
     }
   ],
   "go1.x": [
