@@ -167,6 +167,16 @@
       "useCaseName": "Infrastructure event management"
     }
   ],
+  "aot.dotnet7 (provided.al2)": [
+    {
+      "directory": "provided.al2/nativeaot/dotnet7/cookiecutter-aws-sam-hello-dotnet",
+      "displayName": "Hello World Example",
+      "dependencyManager": "cli-package",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    }
+  ],
   "go1.x": [
     {
       "directory": "go1.x/cookiecutter-aws-sam-hello-golang",
@@ -195,6 +205,41 @@
     },
     {
       "directory": "go1.x/cookiecutter-aws-sam-hello-step-functions-sample-app",
+      "displayName": "Step Functions Sample App (Stock Trader)",
+      "dependencyManager": "mod",
+      "appTemplate": "step-functions-sample-app",
+      "packageType": "Zip",
+      "useCaseName": "Multi-step workflow"
+    }
+  ],
+  "go (provided.al2)": [
+    {
+      "directory": "provided.al2/go/cookiecutter-aws-sam-hello-golang",
+      "displayName": "Hello World Example",
+      "dependencyManager": "mod",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    },
+    {
+      "directory": "provided.al2/go/cookiecutter-aws-sam-eventbridge-hello-golang",
+      "displayName": "EventBridge Hello World",
+      "dependencyManager": "mod",
+      "appTemplate": "eventBridge-hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Infrastructure event management"
+    },
+    {
+      "directory": "provided.al2/go/cookiecutter-aws-sam-eventbridge-schema-app-golang",
+      "displayName": "EventBridge App from scratch (100+ Event Schemas)",
+      "dependencyManager": "mod",
+      "appTemplate": "eventBridge-schema-app",
+      "isDynamicTemplate": "True",
+      "packageType": "Zip",
+      "useCaseName": "Infrastructure event management"
+    },
+    {
+      "directory": "provided.al2/go/cookiecutter-aws-sam-hello-step-functions-sample-app",
       "displayName": "Step Functions Sample App (Stock Trader)",
       "dependencyManager": "mod",
       "appTemplate": "step-functions-sample-app",
@@ -480,6 +525,14 @@
       "useCaseName": "Serverless API"
     },
     {
+      "directory": "nodejs16.x/cookiecutter-aws-sam-hello-powertools-typescript-nodejs",
+      "displayName": "Hello World Example TypeScript w/ Lambda Powertools",
+      "dependencyManager": "npm",
+      "appTemplate": "hello-world-powertools-typescript",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    },
+    {
       "directory": "nodejs16.x/cookiecutter-quick-start-web-with-connectors",
       "displayName": "Quick Start: Web Backend With Connectors",
       "dependencyManager": "npm",
@@ -499,6 +552,90 @@
   "amazon/nodejs16.x-base": [
     {
       "directory": "nodejs16.x-image/cookiecutter-aws-sam-hello-nodejs-lambda-image",
+      "displayName": "Hello World Image Example",
+      "dependencyManager": "npm",
+      "appTemplate": "hello-world-lambda-image",
+      "packageType": "Image",
+      "useCaseName": "Hello World Example"
+    }
+  ],
+  "nodejs18.x": [
+    {
+      "directory": "nodejs18.x/cookiecutter-aws-sam-hello-nodejs",
+      "displayName": "Hello World Example",
+      "dependencyManager": "npm",
+      "appTemplate": "hello-world",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-aws-sam-hello-typescript-nodejs",
+      "displayName": "Hello World Example TypeScript",
+      "dependencyManager": "npm",
+      "appTemplate": "hello-world-typescript",
+      "packageType": "Zip",
+      "useCaseName": "Hello World Example"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-aws-sam-step-functions-sample-app",
+      "displayName": "Step Functions Sample App (Stock Trader)",
+      "dependencyManager": "npm",
+      "appTemplate": "step-functions-sample-app",
+      "packageType": "Zip",
+      "useCaseName": "Multi-step workflow"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-from-scratch",
+      "displayName": "Quick Start: From Scratch",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-from-scratch",
+      "packageType": "Zip",
+      "useCaseName": "Standalone function"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-cloudwatch-events",
+      "displayName": "Quick Start: Scheduled Events",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-cloudwatch-events",
+      "packageType": "Zip",
+      "useCaseName": "Scheduled task"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-s3",
+      "displayName": "Quick Start: S3",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-s3",
+      "packageType": "Zip",
+      "useCaseName": "Data processing"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-sns",
+      "displayName": "Quick Start: SNS",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-sns",
+      "packageType": "Zip",
+      "useCaseName": "Data processing"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-sqs",
+      "displayName": "Quick Start: SQS",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-sqs",
+      "packageType": "Zip",
+      "useCaseName": "Data processing"
+    },
+    {
+      "directory": "nodejs18.x/cookiecutter-quick-start-web",
+      "displayName": "Quick Start: Web Backend",
+      "dependencyManager": "npm",
+      "appTemplate": "quick-start-web",
+      "packageType": "Zip",
+      "useCaseName": "Serverless API"
+    }
+  ],
+  "amazon/nodejs18.x-base": [
+    {
+      "directory": "nodejs18.x-image/cookiecutter-aws-sam-hello-nodejs-lambda-image",
       "displayName": "Hello World Image Example",
       "dependencyManager": "npm",
       "appTemplate": "hello-world-lambda-image",
@@ -1008,6 +1145,16 @@
   "amazon/go1.x-base": [
     {
       "directory": "go1.x-image/cookiecutter-aws-sam-hello-golang-lambda-image",
+      "displayName": "Hello World Lambda Image Example",
+      "dependencyManager": "mod",
+      "appTemplate": "hello-world-lambda-image",
+      "packageType": "Image",
+      "useCaseName": "Hello World Example"
+    }
+  ],
+  "amazon/go-provided.al2-base": [
+    {
+      "directory": "provided.al2/go/cookiecutter-aws-sam-hello-golang-lambda-image",
       "displayName": "Hello World Lambda Image Example",
       "dependencyManager": "mod",
       "appTemplate": "hello-world-lambda-image",
